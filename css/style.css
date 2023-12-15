@@ -552,6 +552,7 @@ button:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
@@ -582,4 +583,124 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
+}
+
+.rewiew-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0px solid transparent;
+}
+
+.rewiew-form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.rewiew-form-input-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+}
+.rewiew-form-input:focus + .rewiew-form-input-icon {
+  fill: #4d5ae5;
+  stroke: #4d5ae5;
+}
+
+.rewiew-form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.texteria-div {
+  margin-bottom: 16px;
+}
+
+.rewiew-form-comment {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding: 8px 16px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0px solid transparent;
+}
+
+.rewiew-form-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.rewiew-form-comment:focus {
+  border-color: #4d5ae5;
+}
+
+.rewiew-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.rewiew-form-chackbox-label {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.rewiew-form-own-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  fill: transparent;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rewiew-form-checkbox:checked
+  + .rewiew-form-chackbox-label
+  > .rewiew-form-own-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.rewiew-form-checkbox:focus
+  + .rewiew-form-chackbox-label
+  > .rewiew-form-own-checkbox {
+  outline: 1px solid #404bbf;
+}
+
+.rewiew-form-own-checkbox-icon {
+  fill: #f4f4fd;
+  opacity: 0;
+}
+
+.privacy-text {
+  color: #4d5ae5;
+}
+
+.rewiew-form-checkbox:checked
+  + .rewiew-form-chackbox-label
+  .rewiew-form-own-checkbox-icon {
+  opacity: 1;
 }
